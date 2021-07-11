@@ -1,7 +1,7 @@
     {
       "name": "com.bonjour-lab.monoculardepth",
       "displayName": "Bonjour Lab - Barracuda Monocular Depth Estimation",
-      "version": "1.0.1-preview",
+      "version": "1.0.2-preview",
       "unity": "2019.3",
       "description": "Monocular depth estimation using Barracuda",
       "keywords": [
