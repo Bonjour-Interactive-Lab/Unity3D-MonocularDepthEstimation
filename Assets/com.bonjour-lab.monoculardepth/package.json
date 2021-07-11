@@ -1,0 +1,29 @@
+    {
+      "name": "com.bonjour-lab.monoculardepth",
+      "displayName": "Bonjour Lab - Barracuda Monocular Depth Estimation",
+      "version": "1.0.0-preview",
+      "unity": "2019.3",
+      "description": "Monocular depth estimation using Barracuda",
+      "keywords": [
+            "camera",
+            "opticalFlow",
+            "utility",
+            "unity",
+            "bonjourlab"
+        ],
+      "homepage": "https://www.bonjour-lab.com/",
+      "bugs": {
+        "url": "https://github.com/Bonjour-Interactive-Lab/Unity3D-MonocularDepthEstimationw/issues"
+       },
+      "repository": {
+         "type": "git",
+         "url": "https://github.com/Bonjour-Interactive-Lab/Unity3D-MonocularDepthEstimation.git"
+      },
+      "license": "MIT",
+      "author": {
+             "name": "bonjour lab",
+             "email": "alex@bonjour-lab.com",
+             "url": "https://www.bonjour-lab.com/"
+       },
+       "dependencies": { "com.bonjour-lab.uvccamera": "1.0.2" }
+    }
