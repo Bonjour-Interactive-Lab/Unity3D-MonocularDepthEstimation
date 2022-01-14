@@ -100,11 +100,13 @@ namespace Bonjour.AIModel
         private void ResizeSourceToModel(){
             float aspect            = (float) source.width / (float) source.height;
             int width               = Mathf.FloorToInt(rawInput.height * aspect);
-            RenderTexture temp      = RenderTexture.GetTemporary(width, rawInput.height, 0, source.format);
-            Graphics.Blit(source, temp);
+            RenderTexture temp      = RenderTexture.GetTemporary(rawInput.width, rawInput.height, 0, source.format);
+
+            if(source.width >= source.height)   Graphics.Blit(source, temp, new Vector2(1, aspect), new Vector2(0, (1-aspect) * .5f));
+            else                                Graphics.Blit(source, temp, new Vector2(1+aspect, 1), new Vector2((1-aspect) * -.5f, 0));
 
             RenderTexture.active = temp;
-            rawInput.ReadPixels(new Rect(temp.width / 4, 0, rawInput.width, rawInput.height), 0, 0);
+            rawInput.ReadPixels(new Rect(0, 0, rawInput.width, rawInput.height), 0, 0);
             rawInput.Apply();
             RenderTexture.ReleaseTemporary(temp);
         }
