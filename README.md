@@ -27,7 +27,7 @@ To the scopedRegistries section:
 To the dependencies section:
 
 ```
-"com.bonjour-lab.monoculardepth": "1.0.4-preview",
+"com.bonjour-lab.monoculardepth": "1.0.5-preview",
 ```
 
 After changes, the manifest file should look like below:
@@ -43,7 +43,7 @@ After changes, the manifest file should look like below:
     }
   ],
   "dependencies": {
-    "com.bonjour-lab.monoculardepth": "1.0.4-preview",
+    "com.bonjour-lab.monoculardepth": "1.0.5-preview",
     ...
 ```
 

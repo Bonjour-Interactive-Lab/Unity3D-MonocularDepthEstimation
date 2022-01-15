@@ -117,7 +117,7 @@ namespace Bonjour.AIModel
         }
 
         private void OnGUI() {
-            if(rawInput != null && source != null){
+            if(rawInput != null && source != null && showDebug){
 
                 int w = Mathf.RoundToInt(rawInput.width * debugScale);
                 int h = Mathf.RoundToInt(rawInput.height * debugScale);
