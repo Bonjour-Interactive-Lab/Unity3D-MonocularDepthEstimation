@@ -29,6 +29,8 @@ namespace Bonjour.AIModel
         private int modelheight = 224;
 
         private Texture2D rawInput;
+
+        [SerializeField]
         private RenderTexture rawOutput;
         private RenderTexture debugOutput;
         private Material depthViewer;
@@ -56,6 +58,7 @@ namespace Bonjour.AIModel
             rawInput                    = new Texture2D(modelwidth, modelheight, TextureFormat.RGB24, false);
             rawOutput                   = new RenderTexture(modelwidth, modelheight, 0, RenderTextureFormat.RFloat);
             rawOutput.enableRandomWrite = true;
+            rawOutput.name              = "rawOutput";
             rawOutput.Create();
 
             debugOutput                   = new RenderTexture(modelwidth, modelheight, 0, RenderTextureFormat.ARGBFloat);
